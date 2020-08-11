@@ -1,10 +1,4 @@
-import {
-  Repository,
-  getRepository,
-  SelectQueryBuilder,
-  MoreThanOrEqual,
-  LessThanOrEqual,
-} from 'typeorm';
+import { Repository, getRepository, SelectQueryBuilder } from 'typeorm';
 import IClassesRepository from '../IClassesRepository';
 import { IClass, IClassesFilters } from '../../interfaces/ClasssInterface';
 import Class from './entities/Class';
