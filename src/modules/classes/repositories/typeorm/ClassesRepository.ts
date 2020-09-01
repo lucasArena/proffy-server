@@ -17,7 +17,7 @@ class ClassesRepository implements IClassesRepository {
     time,
   }: IClassesFilters): Promise<Class[]> {
     const classes = await this.repository.find({
-      relations: ['schedule'],
+      relations: ['schedule', 'user'],
       join: { alias: 'classes', innerJoin: { schedule: 'classes.schedule' } },
       where: (qb: SelectQueryBuilder<ClassSchedule>) => {
         qb.where({

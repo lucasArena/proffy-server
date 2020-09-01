@@ -23,6 +23,12 @@ class UserRepository implements IUserRepository {
 
     return user;
   }
+
+  public async findByEmail(email: string): Promise<User | undefined> {
+    const user = await this.repository.findOne({ where: { email } });
+
+    return user;
+  }
 }
 
 export default UserRepository;

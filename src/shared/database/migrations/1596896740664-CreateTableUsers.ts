@@ -20,19 +20,34 @@ export default class CreateTableUsers1596896740664
             isNullable: false,
           },
           {
-            name: 'avatar',
+            name: 'surname',
             type: 'varchar',
             isNullable: false,
+          },
+          {
+            name: 'email',
+            type: 'varchar',
+            isNullable: false,
+          },
+          {
+            name: 'password',
+            type: 'varchar',
+            isNullable: false,
+          },
+          {
+            name: 'avatar',
+            type: 'varchar',
+            isNullable: true,
           },
           {
             name: 'whatsapp',
             type: 'varchar',
-            isNullable: false,
+            isNullable: true,
           },
           {
             name: 'bio',
             type: 'varchar',
-            isNullable: false,
+            isNullable: true,
           },
           {
             name: 'created_at',

@@ -7,6 +7,8 @@ import ClassesRepository from '../../modules/classes/repositories/typeorm/Classe
 import IConnectionsRepository from '../../modules/connections/repositories/IConnectionsRepository';
 import ConnectionRepository from '../../modules/connections/repositories/typeorm/ConnectionRepository';
 
+import '../../modules/users/providers';
+
 container.registerSingleton<IUserRepository>('UsersRepository', UserRepository);
 container.registerSingleton<IClassesRepository>(
   'ClassesRepository',
